@@ -2,7 +2,7 @@ FROM jboss/keycloak
 
 
 ADD krb5.conf /etc/krb5.conf
-ADD sso-keycloak.keytab /opt/jboss/keycloak/standalone/configuration/sso-keycloak.keytab
+ADD spn_user.keytab /opt/jboss/keycloak/standalone/configuration/spn_user.keytab
 
 USER root
 
